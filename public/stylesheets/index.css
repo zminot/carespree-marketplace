@@ -1,0 +1,69 @@
+body {
+  font-family: Lato;
+}
+
+#carepress-brand {
+  max-width: 25%;
+  max-height: 25%;
+}
+
+#input-button {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #08F5B9;
+}
+
+#carespree-title {
+  font-weight: bold;
+  font-size: 75px;
+  color: #01C0E3;
+
+  -webkit-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+       -o-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+#carespree-cta {
+  color: #01C0E3;
+
+  -webkit-animation: fadein 2s;
+     -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+       -o-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+.carespree-main-input {
+  -webkit-animation: fadein 2s;
+     -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+       -o-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

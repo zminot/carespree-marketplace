@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  nav.navbar.navbar-expand-lg.navbar-white.bg-white.static-top
+    .container
+      img#carepress-brand.navbar-brand(href='index.html' src='images/carespree logo.png')
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+  .container
+    .row
+      .col-lg-12.text-center
+        h1#carespree-title.mt-5
+          | Care
+          span(style='color: #08F5B9;') spree
+          | Market
+          span(style='color: #08F5B9;') place
+        h4#carespree-cta Enter non-identifying information for personalized results
+    .row.mt-5
+        .col-lg-12.text-center
+          h6#carespree-cta If condition can be treated with OTC, enter information here to get the pharmacies within 5 miles with the drug
+    .row
+        .col-lg-12.text-center
+          input.carespree-main-input.m-2.form-control(type='text' placeholder='Drug from Carespree App' id='drug' name='drug')
+    .row.mt-2
+        .col-lg-12.text-center
+          button#input-button.btn.carespree-main-input(onClick='queryDrugs()')
+            | Submit
+    .products.mt-2
+    .row.mt-5
+        .col-lg-12.text-center
+          h6#carespree-cta If condition needs to be treated by a provider, enter information here to get healthcare providers within 5 miles with the given insurance
+    .row
+        .col-lg-12.text-center
+          input.carespree-main-input.m-2.form-control(type='text' placeholder='Specialty of condition from Carespree App' id='specialty' name='specialty')
+          input.carespree-main-input.m-2.form-control(type='text' placeholder='Insurance' id='insurance' name='insurance')
+    .row.mt-2
+        .col-lg-12.text-center
+          button#input-button.btn.carespree-main-input(onClick='queryProviders()')
+            | Submit
+    .providers.mt-2
